@@ -1,0 +1,11 @@
+C:\Users\Andres Licona\Projects\Paper-rock-scissors-lizard-Spoke\SheldonsGame\SheldonsGame\bin\Debug\SheldonsGame.exe.config
+C:\Users\Andres Licona\Projects\Paper-rock-scissors-lizard-Spoke\SheldonsGame\SheldonsGame\bin\Debug\SheldonsGame.exe
+C:\Users\Andres Licona\Projects\Paper-rock-scissors-lizard-Spoke\SheldonsGame\SheldonsGame\bin\Debug\SheldonsGame.pdb
+C:\Users\Andres Licona\Projects\Paper-rock-scissors-lizard-Spoke\SheldonsGame\SheldonsGame\obj\Debug\SheldonsGame.csproj.AssemblyReference.cache
+C:\Users\Andres Licona\Projects\Paper-rock-scissors-lizard-Spoke\SheldonsGame\SheldonsGame\obj\Debug\SheldonsGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\Andres Licona\Projects\Paper-rock-scissors-lizard-Spoke\SheldonsGame\SheldonsGame\obj\Debug\SheldonsGame.Form1.resources
+C:\Users\Andres Licona\Projects\Paper-rock-scissors-lizard-Spoke\SheldonsGame\SheldonsGame\obj\Debug\SheldonsGame.Properties.Resources.resources
+C:\Users\Andres Licona\Projects\Paper-rock-scissors-lizard-Spoke\SheldonsGame\SheldonsGame\obj\Debug\SheldonsGame.csproj.GenerateResource.cache
+C:\Users\Andres Licona\Projects\Paper-rock-scissors-lizard-Spoke\SheldonsGame\SheldonsGame\obj\Debug\SheldonsGame.csproj.CoreCompileInputs.cache
+C:\Users\Andres Licona\Projects\Paper-rock-scissors-lizard-Spoke\SheldonsGame\SheldonsGame\obj\Debug\SheldonsGame.exe
+C:\Users\Andres Licona\Projects\Paper-rock-scissors-lizard-Spoke\SheldonsGame\SheldonsGame\obj\Debug\SheldonsGame.pdb
