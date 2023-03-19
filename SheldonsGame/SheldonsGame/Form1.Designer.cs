@@ -34,24 +34,26 @@
             this.btnPlay = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.GamePanel = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
-            this.pbRock = new System.Windows.Forms.PictureBox();
-            this.pbPaper = new System.Windows.Forms.PictureBox();
+            this.lblRival = new System.Windows.Forms.Label();
+            this.lblPlayer = new System.Windows.Forms.Label();
+            this.pbRival = new System.Windows.Forms.PictureBox();
+            this.pbPlayer = new System.Windows.Forms.PictureBox();
+            this.pbSpock = new System.Windows.Forms.PictureBox();
             this.pbLizard = new System.Windows.Forms.PictureBox();
             this.pbScissors = new System.Windows.Forms.PictureBox();
-            this.pbSpock = new System.Windows.Forms.PictureBox();
-            this.pbPlayer = new System.Windows.Forms.PictureBox();
-            this.pbRival = new System.Windows.Forms.PictureBox();
-            this.lblResult = new System.Windows.Forms.Label();
+            this.pbPaper = new System.Windows.Forms.PictureBox();
+            this.pbRock = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnResult = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbAtom)).BeginInit();
             this.GamePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRock)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPaper)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRival)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSpock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLizard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScissors)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSpock)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRival)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPaper)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRock)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -102,7 +104,9 @@
             // 
             // GamePanel
             // 
-            this.GamePanel.Controls.Add(this.lblResult);
+            this.GamePanel.Controls.Add(this.btnResult);
+            this.GamePanel.Controls.Add(this.lblRival);
+            this.GamePanel.Controls.Add(this.lblPlayer);
             this.GamePanel.Controls.Add(this.pbRival);
             this.GamePanel.Controls.Add(this.pbPlayer);
             this.GamePanel.Controls.Add(this.pbSpock);
@@ -116,42 +120,55 @@
             this.GamePanel.Size = new System.Drawing.Size(576, 476);
             this.GamePanel.TabIndex = 4;
             // 
-            // btnBack
+            // lblRival
             // 
-            this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(12, 12);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(70, 30);
-            this.btnBack.TabIndex = 3;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.lblRival.AutoSize = true;
+            this.lblRival.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRival.Location = new System.Drawing.Point(398, 102);
+            this.lblRival.Name = "lblRival";
+            this.lblRival.Size = new System.Drawing.Size(42, 23);
+            this.lblRival.TabIndex = 14;
+            this.lblRival.Text = "Rival";
             // 
-            // pbRock
+            // lblPlayer
             // 
-            this.pbRock.Image = global::SheldonsGame.Properties.Resources.rock;
-            this.pbRock.Location = new System.Drawing.Point(123, 408);
-            this.pbRock.Name = "pbRock";
-            this.pbRock.Size = new System.Drawing.Size(50, 50);
-            this.pbRock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRock.TabIndex = 5;
-            this.pbRock.TabStop = false;
-            this.pbRock.Tag = "rock";
-            this.pbRock.Click += new System.EventHandler(this.StartMatch);
+            this.lblPlayer.AutoSize = true;
+            this.lblPlayer.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer.Location = new System.Drawing.Point(49, 102);
+            this.lblPlayer.Name = "lblPlayer";
+            this.lblPlayer.Size = new System.Drawing.Size(53, 23);
+            this.lblPlayer.TabIndex = 13;
+            this.lblPlayer.Text = "Player";
             // 
-            // pbPaper
+            // pbRival
             // 
-            this.pbPaper.Image = global::SheldonsGame.Properties.Resources.paper;
-            this.pbPaper.Location = new System.Drawing.Point(188, 408);
-            this.pbPaper.Name = "pbPaper";
-            this.pbPaper.Size = new System.Drawing.Size(50, 50);
-            this.pbPaper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbPaper.TabIndex = 6;
-            this.pbPaper.TabStop = false;
-            this.pbPaper.Tag = "paper";
-            this.pbPaper.Click += new System.EventHandler(this.StartMatch);
+            this.pbRival.Location = new System.Drawing.Point(398, 156);
+            this.pbRival.Name = "pbRival";
+            this.pbRival.Size = new System.Drawing.Size(120, 120);
+            this.pbRival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRival.TabIndex = 11;
+            this.pbRival.TabStop = false;
+            // 
+            // pbPlayer
+            // 
+            this.pbPlayer.Location = new System.Drawing.Point(53, 156);
+            this.pbPlayer.Name = "pbPlayer";
+            this.pbPlayer.Size = new System.Drawing.Size(120, 120);
+            this.pbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPlayer.TabIndex = 10;
+            this.pbPlayer.TabStop = false;
+            // 
+            // pbSpock
+            // 
+            this.pbSpock.Image = global::SheldonsGame.Properties.Resources.spock;
+            this.pbSpock.Location = new System.Drawing.Point(384, 408);
+            this.pbSpock.Name = "pbSpock";
+            this.pbSpock.Size = new System.Drawing.Size(50, 50);
+            this.pbSpock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbSpock.TabIndex = 9;
+            this.pbSpock.TabStop = false;
+            this.pbSpock.Tag = "spock";
+            this.pbSpock.Click += new System.EventHandler(this.StartMatch);
             // 
             // pbLizard
             // 
@@ -174,50 +191,58 @@
             this.pbScissors.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbScissors.TabIndex = 7;
             this.pbScissors.TabStop = false;
-            this.pbScissors.Tag = "scissor";
+            this.pbScissors.Tag = "scissors";
             this.pbScissors.Click += new System.EventHandler(this.StartMatch);
             // 
-            // pbSpock
+            // pbPaper
             // 
-            this.pbSpock.Image = global::SheldonsGame.Properties.Resources.spock;
-            this.pbSpock.Location = new System.Drawing.Point(384, 408);
-            this.pbSpock.Name = "pbSpock";
-            this.pbSpock.Size = new System.Drawing.Size(50, 50);
-            this.pbSpock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbSpock.TabIndex = 9;
-            this.pbSpock.TabStop = false;
-            this.pbSpock.Tag = "spock";
-            this.pbSpock.Click += new System.EventHandler(this.StartMatch);
+            this.pbPaper.Image = global::SheldonsGame.Properties.Resources.paper;
+            this.pbPaper.Location = new System.Drawing.Point(188, 408);
+            this.pbPaper.Name = "pbPaper";
+            this.pbPaper.Size = new System.Drawing.Size(50, 50);
+            this.pbPaper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPaper.TabIndex = 6;
+            this.pbPaper.TabStop = false;
+            this.pbPaper.Tag = "paper";
+            this.pbPaper.Click += new System.EventHandler(this.StartMatch);
             // 
-            // pbPlayer
+            // pbRock
             // 
-            this.pbPlayer.Image = global::SheldonsGame.Properties.Resources.scissors;
-            this.pbPlayer.Location = new System.Drawing.Point(225, 257);
-            this.pbPlayer.Name = "pbPlayer";
-            this.pbPlayer.Size = new System.Drawing.Size(120, 120);
-            this.pbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbPlayer.TabIndex = 10;
-            this.pbPlayer.TabStop = false;
+            this.pbRock.Image = global::SheldonsGame.Properties.Resources.rock;
+            this.pbRock.Location = new System.Drawing.Point(123, 408);
+            this.pbRock.Name = "pbRock";
+            this.pbRock.Size = new System.Drawing.Size(50, 50);
+            this.pbRock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRock.TabIndex = 5;
+            this.pbRock.TabStop = false;
+            this.pbRock.Tag = "rock";
+            this.pbRock.Click += new System.EventHandler(this.StartMatch);
             // 
-            // pbRival
+            // btnBack
             // 
-            this.pbRival.Image = global::SheldonsGame.Properties.Resources.scissors;
-            this.pbRival.Location = new System.Drawing.Point(225, 51);
-            this.pbRival.Name = "pbRival";
-            this.pbRival.Size = new System.Drawing.Size(120, 120);
-            this.pbRival.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRival.TabIndex = 11;
-            this.pbRival.TabStop = false;
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(70, 30);
+            this.btnBack.TabIndex = 3;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // lblResult
+            // btnResult
             // 
-            this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(254, 208);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(50, 23);
-            this.lblResult.TabIndex = 12;
-            this.lblResult.Text = "label2";
+            this.btnResult.BackColor = System.Drawing.Color.Transparent;
+            this.btnResult.Enabled = false;
+            this.btnResult.FlatAppearance.BorderSize = 0;
+            this.btnResult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResult.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResult.Location = new System.Drawing.Point(224, 157);
+            this.btnResult.Name = "btnResult";
+            this.btnResult.Size = new System.Drawing.Size(121, 119);
+            this.btnResult.TabIndex = 15;
+            this.btnResult.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -241,13 +266,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbAtom)).EndInit();
             this.GamePanel.ResumeLayout(false);
             this.GamePanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRock)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPaper)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRival)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSpock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLizard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbScissors)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbSpock)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRival)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPaper)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRock)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,7 +293,9 @@
         private System.Windows.Forms.PictureBox pbRock;
         private System.Windows.Forms.PictureBox pbRival;
         private System.Windows.Forms.PictureBox pbPlayer;
-        private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Label lblRival;
+        private System.Windows.Forms.Label lblPlayer;
+        private System.Windows.Forms.Button btnResult;
     }
 }
 
